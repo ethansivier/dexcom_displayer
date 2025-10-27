@@ -6,7 +6,7 @@ data = ""
 
 with open("login.json", "r") as file:
     data = json.load(file)
-print(data)
+    
 dexcom = Dexcom(username=data["username"], password=data["password"], region="ous") 
 TRANSPARENT = "gray1"    
 
